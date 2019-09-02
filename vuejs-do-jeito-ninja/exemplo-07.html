@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .red {
+      color: red;
+    }
+
+    .green {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>{{titulo}}</h1>
+
+    <p :class="classHtml">
+        <strong>Lorem Ipsum</strong> é simplesmente uma simulação de texto da indústria tipográfica e de impressos, 
+        e vem sendo utilizado desde o século XVI,
+        quando um impressor desconhecido pegou uma 
+        bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+    </p>
+
+  </div>
+  
+  <script src="https://unpkg.com/vue"></script>
+
+  <script>
+    var app = new Vue({
+      el: "#app",
+      data: {
+        titulo: "Aula 01 - Vuejs do jeito ninja.",
+        classHtml: "green"
+      } 
+    });
+  </script>
+</body>
+</html>
